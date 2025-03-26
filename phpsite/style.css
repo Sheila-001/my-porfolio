@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ /* Style for both navbar and footer */
+ .navbar {
+  position: fixed;
+  width: 90%;
+  background-color: hsla(198, 68%, 34%, 0.8);
+  z-index: 100;
+  padding: 10px 0;
+  /* Reduced padding */
+  text-align: center;
+  /* Center align text */
+ }
+
+ /* Style for unordered list in navbar and footer */
+ .navbar ul,
+ .social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Reduced gap */
+ }
+
+ /* Style for links in navbar */
+ .navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+  /* Reduced font size */
+  transition: color 0.3s ease;
+ }
+ .navbar {
+  position: fixed;
+  width: 90%;
+  background-color: hsla(198, 68%, 34%, 0.8);
+  z-index: 100;
+  padding: 10px ;
+  /* Reduced padding */
+  text-align: center;
+  /* Center align text */
+ }
+
+ /* Style for unordered list in navbar and footer */
+ .footer {
+  margin: 10px;
+  padding: 10%;
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Reduced gap */
+ }
+
+ .footer {
+  position: fixed;
+  width: 50%;
+  background-color: hsla(198, 74%, 72%, 0.8);
+  z-index: 50;
+  padding: 10px 0;
+  /* Reduced padding */
+  text-align: center;
+  /* Center align text */
+ }
+
+ /* Style for links in navbar */
+ .footer {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.1em;
+  /* Reduced font size */
+  transition: color 0.3s ease;
+ }
+
+ .footer  h1  {
+  text-align: center;
+ }
+ 
+ .footer :hover {
+  color: #1d1270;
+ }
+
+ /* Hero section styles */
+ .hero {
+  background-image: url('your-image-url-here.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+  /* Adjusted margin top */
+ }
+
+ .hero-content {
+  background-color: rgba(41, 164, 172, 0.8);
+  /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 20px;
+ }
+
+ .name {
+  font-size: 4em;
+  margin: 0;
+ }
+
+ .position {
+  font-size: 2em;
+  color: white;
+  margin: 0;
+ }
+
+ /* Style for cards */
+ .about-me,
+ .education,
+ .trainings,
+ .project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: lightblue;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: transform 0.3s ease;
+  animation: highlight 0s ease-in-out forwards;
+  align-items: center; 
+ }
+
+ .about-me:hover,
+ .education:hover,
+ .trainings:hover,
+ .project-card:hover {
+  transform: translateY(-5px);
+ }
+
+ .about-me:target,
+ .education:target,
+ .trainings:target,
+ .project-card:target {
+  animation: highlight 10s ease-out;
+ }
+
+ @keyframes highlight {
+  100% {
+  background-color: hsla(198, 68%, 34%, 0.8);
+  }
+ }
+
+ /* Cards container styles */
+ .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+ }
+
+ .cards-container>div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 300px;
+  /* Adjusted min width */
+  max-width: 600px;
+  /* Adjusted max width */
+  text-align: center;
+ }
+
+ /* Headings and paragraph styles */
+ .cards-container h1,
+ .cards-container h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+ }
+
+ .cards-container p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+ }
+
+ /* Social links styles */
+ .footer {
+  bottom: 0;
+  /* Stick footer to the bottom */
+  padding: 20px 0;
+  /* Reduced padding */
+ }
+
+ .footer h1 {
+  font-size: 8.5em;
+  /* Reduced font size */
+  color: white;
+  margin-bottom: 10px;
+ }
+
+ .footer p {
+  font-size: 8.5em;
+  color: white;
+  margin: 5px 0;
+ }
+
+ .social-links a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  text-decoration: none;
+ }
+
+ .social-links a:hover {
+  color: lightblue;
+ }
+
+ /* Document container styles */
+ .doc-container {
+  position: relative;
+  display: inline-block;
+  animation: highlight 10s ease-out;
+ }
